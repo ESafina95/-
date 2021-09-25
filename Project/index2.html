@@ -33,6 +33,20 @@
     </form>
         <h2>Создатель:</h2>
         <h3>Сафина Эльвира</h3>
-        <script src="/js/Button.js"></script>
+        <script>
+            function ShowMessage(){
+                let Name = document.querySelector("#name").value;
+                let Email = document.querySelector("#email").value;
+                let Info = document.querySelector("#inf").value;
+
+                alert('Имя:'+' '+ Name + '\n' +
+                'Email:'+' '+ Email  +'\n'+
+                "Текст:"+ Info );         
+
+                console.log(Name, Email, Info);
+
+                alert("Отправлено");
+            }
+        </script>
     </body>
 </html>
